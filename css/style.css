@@ -1,0 +1,312 @@
+/* GLOBAL SETTING */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maincolor:#fa2538;
+}
+/* begin header */
+.header{
+    height: 100px;
+    display: flex;
+    border-bottom: 2px solid var(--maincolor);
+    box-shadow: 0px 0px 10px 0px black;
+    padding: 0 7%;
+}
+.header__logo{
+    width: 100%;
+}
+.header__logo img{
+    height: 90px;
+}
+.header__nav{
+    width: 100%;
+}
+.header__nav ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.header__nav ul li{
+    margin: 0 20px;
+}
+.header__nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.header__nav ul li a:hover{
+    color: var(--maincolor);
+}
+.header__nav ul li .active{
+    color: var(--maincolor);
+}
+.header__login{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header__login i{
+    font-size: 50px;
+    padding-right: 15%;
+}
+.header__login i:hover{
+    color: var(--maincolor);
+}
+.header__login a{
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.header__login a:hover{
+    color: var(--maincolor);
+}
+/* .header__nav ul li{
+    list-style: none;
+}
+.header__nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header__login span i{
+    font-size: 50px;
+}
+.header__login a{
+    text-decoration: none;
+    color: black;
+} */
+/* end header */
+/* begin carousel */
+.carousel__item:nth-child(1){
+    background-image: url(./../img/slider1.jpg);
+    height: 800px;
+    background-size: cover;
+}
+.carousel__item:nth-child(2){
+    background-image: url(./../img/slider2.jpg);
+    height: 800px;
+    background-size: cover;
+}
+.carousel__item:nth-child(3){
+    background-image: url(./../img/slider3.jpg);
+    height: 800px;
+    background-size: cover;
+}
+.carousel__item:nth-child(4){
+    background-image: url(./../img/slider4.jpg);
+    height: 800px;
+    background-size: cover;
+}
+.carousel__item:nth-child(5){
+    background-image: url(./../img/slider1.jpg);
+    height: 800px;
+    background-size: cover;
+}
+.carousel__item:nth-child(6){
+    background-image: url(./../img/slider2.jpg);
+    height: 800px;
+    background-size: cover;
+}
+/* end carousel */
+/* begin Film */
+.film{
+    padding: 0 10%;
+}
+.film__title{
+    color: var(--maincolor);
+    text-align: center;
+    margin: 3rem;
+}
+.film__item button{
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 3%;
+}
+.film__item:hover button{
+    background-color: rgb(255, 94, 45);
+    color: white;
+    cursor: pointer;
+}
+.film__content{
+    position: relative;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    font-size: 100px!important;
+    /* Độ ưu tiên */
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top:28%;
+    left: -10%;
+}
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top:28%;
+    right: -10%;
+}
+
+/* khi không hiện những thanh nav */
+/* .owl-nav{
+    display: block!important;
+} */
+/* end Film */
+
+/* begin new */
+.new{
+    padding: 3% 10%;
+}
+.new__button{
+   text-align: center;
+   padding :20px 0;
+}
+.new__button span{
+    margin: 0 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.new__button .active{
+    color: var(--maincolor);
+}
+.new__button span:hover{
+    color: var(--maincolor);
+}
+.new__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    grid-gap: 20px;
+}
+.new__items img{
+    width: 100%;
+    height: 400px;
+}
+.new__content a{
+    display: block;
+    height: 100%;
+}
+.new__items{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.new__items::before{
+    content: '';
+    position: absolute;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+.new__text h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.new__text p{
+    color: black;
+    border: 1px solid white;
+    width: 70%;
+    height: 140px;
+    text-align: center;
+    padding: 25px 5%;
+    margin: auto;
+    transition: all 0.3s;
+    position: absolute;
+    bottom:-50%;
+    left: 80px;
+}
+.new__items img{
+    transition: 0.3s all;
+}
+.new__items:hover::before{
+    background-color: #17819c;
+    z-index: 3;
+}
+.new__items:hover p{
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 80px;
+    z-index: 3;
+} 
+.new__items:hover h2{
+    z-index:3;
+}
+.new__items:hover img{
+    transform: scale(1.1);
+}
+/* end new */
+/* begin contact */
+.contact{
+    padding: 0 10%;
+    background-image: url(../img/background-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+.contact h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3% 0;
+}
+.contact__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+    grid-gap: 40px;
+}
+.contact__items{
+    background-color: white;
+}
+.contact__items h2{
+    margin-bottom: 30px;
+}
+.contact__text {
+    padding: 2% 5%;
+}
+.contact__items label{
+    display: block;
+    position: relative;
+    top:-32px;
+    left: 0px;
+    color: #999;
+    font-family: 'Helvetica', sans-serif;
+    z-index: 1;
+    transition: all 0.3s ease;
+    
+}
+.contact__items input{
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    height: 50px;
+    font-family: 'Helvetica',sans-serif;
+    z-index: 2;
+    font-size: 20px;
+}
+.contact__items input:focus{
+    outline: none;
+    border-bottom: 2px solid #00aced;
+}
+.contact__items input:focus + label{
+    top: -70px;
+    color: #00aced;
+    font-size: 20px;
+}
+/* end contact */

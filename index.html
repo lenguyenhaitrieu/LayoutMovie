@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <!-- Ligh BOX CSS -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/web-logo.png" alt="">
+        </div>
+        <div class="header__nav">
+            <ul>
+                <li><a href="" class="active">Lịch chiếu</a></li>
+                <li><a href="">Cụm rạp</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Ứng dụng</a></li>
+            </ul>
+        </div>
+        <div class="header__login">
+            <span><i class="fas fa-user-circle"></i></span>
+            <span><a href="">Đăng nhập</a></span>
+        </div>
+    </header>
+    <!-- begin carousel -->
+    <div class="swiper-container carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide carousel__item"></div>
+            <div class="swiper-slide carousel__item"></div>
+            <div class="swiper-slide carousel__item"></div>
+            <div class="swiper-slide carousel__item"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    </div>
+    <!-- end carousel -->
+
+    <!-- begin film -->
+    <section class="film">
+        <h1 class="film__title">Phim đang chiếu</h1>
+        <div class="owl-carousel owl-theme film__content">
+            <div class="film__item">
+                <img src="./img/trum-huong-cang-chasing-the-dragon-15088270130890.jpg" alt="">
+                <button>Đặt vé</button>
+            </div>
+            <div class="film__item">
+                <img src="./img/trai-nghiem-diem-chet-flatliners-15093522963475.jpg" alt="">
+                <button>Đặt vé</button>
+            </div>
+            <div class="film__item">
+                <img src="./img/24-gio-hoi-sinh-24-hours-to-live-c18-15090874493731.jpg" alt="">
+                <button>Đặt vé</button>
+            </div>
+            <div class="film__item">
+                <img src="./img/hiem-hoa-rung-chet-jungle-15095199102590.jpg" alt="">
+                <button>Đặt vé</button>
+            </div>
+            <div class="film__item">
+                <img src="./img/star-wars-jedi-cuoi-cung.jpg" alt="">
+                <button>Đặt vé</button>
+            </div>
+            <div class="film__item">
+                <img src="./img/thor-ragnarok-15088151416399.jpg" alt="">
+                <button>Đặt vé</button>
+            </div>
+        </div>
+    </section>
+    <!-- end film -->
+    <!-- begin new -->
+    <section class="new">
+        <div class="new__button">
+
+            <span data-filter="all">All</span>
+            <span class="active" data-filter=".phim">Điện Ảnh</span>
+            <span data-filter=".reviews">Reviews</span>
+            <span data-filter=".sale">Khuyến Mãi</span>
+
+
+        </div>
+        <div class="new__content container">
+            <div class="new__items mix phim ">
+                <a href="./img/trum-huong-cang-chasing-the-dragon-15088270130890.jpg" data-lightbox="gallery">
+                    <img src="./img/trum-huong-cang-chasing-the-dragon-15088270130890.jpg" alt="">
+                </a>
+                <div class="new__text">
+                    <h2>MOVIE</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequatur nemo sequi alias
+                        repellat mollitia nulla maiores architecto quibusdam quas!</p>
+                </div>
+            </div>
+            <div class="new__items mix phim">
+                <a href="./img/24-gio-hoi-sinh-24-hours-to-live-c18-15090874493731.jpg" data-lightbox="gallerytwo">
+                    <img src="./img/24-gio-hoi-sinh-24-hours-to-live-c18-15090874493731.jpg" alt="">
+                </a>
+                <div class="new__text">
+                    <h2>MOVIE</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequatur nemo sequi alias
+                        repellat mollitia nulla maiores architecto quibusdam quas!</p>
+                </div>
+            </div>
+            <div class="new__items mix reviews">
+                <a href="./img/review.jpg" data-lightbox="gallerythree">
+                    <img src="./img/review.jpg" alt="">
+                </a>
+                <div class="new__text">
+                    <h2>MOVIE</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequatur nemo sequi alias
+                        repellat mollitia nulla maiores architecto quibusdam quas!</p>
+                </div>
+            </div>
+            <div class="new__items mix sale">
+                <a href="./img/sale.jpg" data-lightbox="gallerythree">
+                    <img src="./img/sale.jpg" alt="">
+                </a>
+                <div class="new__text">
+                    <h2>MOVIE</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequatur nemo sequi alias
+                        repellat mollitia nulla maiores architecto quibusdam quas!</p>
+                </div>
+            </div>
+            <div class="new__items mix sale">
+                <a href="./img/sale2.jfif" data-lightbox="gallerythree">
+                    <img src="./img/sale2.jfif" alt="">
+                </a>
+                <div class="new__text">
+                    <h2>MOVIE</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequatur nemo sequi alias
+                        repellat mollitia nulla maiores architecto quibusdam quas!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end new -->
+
+    <!-- begin contact -->
+    <section class="contact">
+        <h1>Contact US</h1>
+        <div class="contact__content">
+            <div class="contact__items">
+                <form action="">
+                    <h2>Fell free to contact to me</h2>
+                    <div class="contact__text">
+                        <input type="text" name="">
+                        <label for="">Your Name</label>
+                    </div>
+                    <div class="contact__text">
+                        <input type="number" name="">
+                        <label for="">Phone</label>
+                    </div>
+                    <div class="contact__text">
+                        <input type="email" name="">
+                        <label for="">Email</label>
+                    </div>
+                </form>
+            </div>
+            <div class="contact__items"></div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- JQUERY -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+
+    <!-- swiper library -->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- mixiup -->
+    <script src="./js/mixitup.min.js"></script>
+
+    <!-- Ligh Box -->
+    <script src="./js/lightbox.min.js"></script>
+
+    <!-- javascript code -->
+    <script>
+        // Initialize swiper
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+        });
+
+        //Initialize OWL CAROUSEL
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: true
+                    }
+                }
+            })
+
+        });
+
+        //Initialize mixiup
+        var mixer = mixitup('.container');
+        mixer.filter('.phim');
+    </script>
+</body>
+
+</html>
